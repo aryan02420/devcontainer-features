@@ -1,5 +1,5 @@
 
-# Git
+# Git (git)
 
 Config git and install related editor extensions.
 
@@ -7,12 +7,22 @@ Config git and install related editor extensions.
 
 ```json
 "features": {
-    "ghcr.io/aryan02420/devcontainer-features/git:1": {
-        "version": "latest"
-    }
+    "ghcr.io/aryan02420/devcontainer-features/git:1": {}
 }
 ```
 
-## TODO
 
-- [ ] configure [git aliases](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases)
+
+## Customizations
+
+### VS Code Extensions
+
+- `eamodio.gitlens`
+- `mhutchie.git-graph`
+- `seatonjiang.gitmoji-vscode`
+
+
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/aryan02420/devcontainer-features/blob/main/src/git/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
