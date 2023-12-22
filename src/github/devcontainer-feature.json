@@ -1,0 +1,17 @@
+{
+    "name": "GitHub",
+    "id": "github",
+    "version": "1.0.0",
+    "description": "For working with GitHub.",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "GitHub.vscode-pull-request-github",
+                "GitHub.vscode-github-actions"
+            ]
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
