@@ -1,0 +1,18 @@
+{
+    "name": "Git",
+    "id": "git",
+    "version": "1.0.0",
+    "description": "Config git and install related editor extensions.",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "eamodio.gitlens",
+                "mhutchie.git-graph",
+                "seatonjiang.gitmoji-vscode"
+            ]
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
