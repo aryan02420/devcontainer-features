@@ -1,0 +1,16 @@
+{
+    "name": "Terminal",
+    "id": "terminal",
+    "version": "1.0.0",
+    "description": "Config the shell and prompt. Add aliases and functions. Install other tools.",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "zsh"
+            }
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
