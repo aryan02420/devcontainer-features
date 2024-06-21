@@ -8,9 +8,11 @@ if [ "$(id -u)" -ne 0 ]; then
     exit 1
 fi
 
+
 if [ "${TAURI_VERSION}" == "1" ]; then
-    sudo apt update
-    sudo apt install -y \
+    apt-get update
+    && export DEBIAN_FRONTEND=noninteractive \
+    && apt-get -y install \
         libwebkit2gtk-4.0-dev \
         build-essential \
         curl \
@@ -23,8 +25,9 @@ if [ "${TAURI_VERSION}" == "1" ]; then
 fi
 
 if [ "${TAURI_VERSION}" == "2" ] || [ "${TAURI_VERSION}" == "latest" ]; then
-    sudo apt update
-    sudo apt install -y \
+    apt-get update
+    && export DEBIAN_FRONTEND=noninteractive \
+    && apt-get -y install \
         libwebkit2gtk-4.1-dev \
         build-essential \
         curl \
