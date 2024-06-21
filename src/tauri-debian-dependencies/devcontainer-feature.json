@@ -1,0 +1,21 @@
+{
+    "name": "Tauri Debian Dependencies",
+    "id": "tauri-debian-dependencies",
+    "version": "1.0.0",
+    "description": "Various system dependencies required by Tauri",
+    "options": {
+        "tauriVersion": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "2",
+                "1"
+            ],
+            "default": "latest",
+            "description": "Select or enter a Tauri version which you are using"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
